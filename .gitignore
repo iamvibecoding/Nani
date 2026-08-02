@@ -1,0 +1,26 @@
+# macOS & System Files
+.DS_Store
+*.swp
+*~
+
+# Build Output & Binaries
+/.build/
+/.swiftpm/
+/Release/
+/DerivedData/
+*.xcodeproj/
+*.xcworkspace/
+*.app
+*.zip
+
+# Generated Build Artifacts
+/AppIcon.icns
+
+# AI, Planning & Design Reference Files
+/.claude/
+/.gemini/
+/opendesign/
+/design-assets/
+/DESIGN.md
+/PLAN.md
+*.dmg
