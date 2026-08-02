@@ -35,6 +35,23 @@ On first launch, Nani walks you through sound assignments and enables launch at 
 - **🍱 Notion-Inspired Native Design**: A calm, warm, content-first user interface built with native **SwiftUI**. Supports fluid hover animations, status indicators, and automatic Light & Dark modes.
 - **⚡ Lightweight Menu Bar Companion**: Keep Nani accessible with a compact system menu bar icon. Quickly check connected port status, pause all sounds, or enable a **Do Not Disturb** schedule on the fly.
 - **🚀 Seamless Direct Updates**: Built-in integration with **Sparkle 2** for automatic, secure, direct-distribution updates.
+- **🌐 Web Interface**: A companion Next.js web application for browsing and previewing the extensive sound library directly from your browser.
+
+---
+
+## 🌐 Web Interface (Sound Library Explorer)
+
+Nani includes a companion web application built with Next.js to easily preview and explore the built-in sound library.
+
+### Running Locally
+
+```bash
+cd nani-web
+npm install
+npm run dev
+```
+
+Then open [http://localhost:3000](http://localhost:3000) in your browser to explore!
 
 ---
 
@@ -105,6 +122,7 @@ Once opened once, Nani will launch seamlessly thereafter and can be configured i
 ```text
 Nani/
 ├── Nani/                 # Core SwiftUI views, application state, models, theme & audio resources
+├── nani-web/             # Next.js web application and sound library explorer
 ├── Scripts/
 │   └── make_icon.swift   # Build utility to compile app-icon.png into AppIcon.icns
 ├── Info.plist            # macOS application bundle manifest & Sparkle configuration
