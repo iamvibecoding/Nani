@@ -802,11 +802,23 @@ footer::after {
 }
 
 @media (max-width: 768px) {
-  header { padding: 16px 5vw; flex-wrap: wrap; gap: 16px; justify-content: flex-start; }
-  nav { display: flex; width: 100%; gap: 12px; margin: 0; justify-content: space-between; align-items: center; }
-  nav a { padding: 8px 12px; font-size: 13px; border-width: 1px; }
+  header { padding: 12px 5vw; flex-wrap: wrap; gap: 12px; justify-content: space-between; }
+  .header-actions { margin: 0; }
+  nav { 
+    display: flex; 
+    width: 100%; 
+    gap: 8px; 
+    margin: 0; 
+    justify-content: flex-start; 
+    align-items: center; 
+    overflow-x: auto; 
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 4px;
+    scrollbar-width: none; /* Firefox */
+  }
+  nav::-webkit-scrollbar { display: none; } /* Chrome/Safari */
+  nav a { padding: 8px 12px; font-size: 13px; border-width: 1px; flex-shrink: 0; white-space: nowrap; }
   nav a .nav-jp { display: none; }
-  .header-actions { position: absolute; right: 5vw; top: 18px; margin: 0; }
   section { padding: 80px 5vw; }
   .hero-actions { flex-direction: column; width: 100%; gap: 16px; }
   .btn-mega, .btn-outline { width: 100%; justify-content: center; }
