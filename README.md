@@ -1,6 +1,6 @@
 <div align="center">
   <img src="app-icon.png" width="128" alt="Nani Logo">
-  <h1>Nani 🎨⚡</h1>
+  <h1>Nani</h1>
   <p><strong>A delightful macOS utility app that plays anime sound effects when connecting or disconnecting cables.</strong></p>
 
   <p>
