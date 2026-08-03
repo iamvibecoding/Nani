@@ -1,30 +1,16 @@
-# Nani 🎨⚡
+<div align="center">
+  <img src="app-icon.png" width="128" alt="Nani Logo">
+  <h1>Nani 🎨⚡</h1>
+  <p><strong>A delightful macOS utility app that plays anime sound effects when connecting or disconnecting cables.</strong></p>
 
-> A delightful macOS utility app that plays anime sound effects when connecting or disconnecting cables.
+  <p>
+    <a href="https://github.com/iamvibecoding/Nani/releases"><img src="https://img.shields.io/github/v/release/iamvibecoding/Nani?color=blue&label=Release" alt="Release"></a>
+    <a href="https://github.com/iamvibecoding/Nani/blob/main/LICENSE"><img src="https://img.shields.io/github/license/iamvibecoding/Nani?color=green" alt="License"></a>
+    <img src="https://img.shields.io/badge/Platform-macOS%2013.0+-lightgrey" alt="Platform">
+  </p>
+</div>
 
 **Nani** brings fun, lively micro-interactions to macOS. Whenever you plug or unplug peripherals — whether it's your charger, display monitor, USB device, or headphones — Nani triggers recognizable anime sound effects and custom audio feedback. Designed with a clean, Notion-inspired aesthetic, Nani blends native macOS feel with warm neutrals, fluid animations, and subtle anime personality.
-
----
-
-## Quick Start (for users)
-
-1. **Download** the latest release from the [Releases page](https://github.com/user/nani/releases) or build from source (see below).
-2. **Move** `Nani.app` to `/Applications`.
-3. **Open** Nani — it lives in your menu bar (look for the 👀 icon).
-4. **Plug something in** — hear the magic. Each port type plays a different anime sound.
-5. **Click the menu bar icon** to quickly see port status, pause sounds, or open Settings.
-
-### Settings
-
-Open Settings from the menu bar popover (`Open Settings`) or press `⌘,`. From there you can:
-
-- **Ports** — see all monitored ports, preview sounds, assign different sounds per port, toggle ports on/off
-- **Sound Library** — browse built-in sounds, import custom `.wav`/`.mp3` files (<500 KB)
-- **Preferences** — toggle launch at login, play on disconnect, dark mode, volume, Do Not Disturb schedule
-
-### Onboarding
-
-On first launch, Nani walks you through sound assignments and enables launch at login automatically.
 
 ---
 
@@ -39,19 +25,25 @@ On first launch, Nani walks you through sound assignments and enables launch at 
 
 ---
 
-## 🌐 Web Interface (Sound Library Explorer)
+## 🚀 Quick Start (for users)
 
-Nani includes a companion web application built with Next.js to easily preview and explore the built-in sound library.
+### Installation
+1. **Download** the latest `.zip` release from the [Releases page](https://github.com/iamvibecoding/Nani/releases).
+2. **Unzip** the file.
+3. **Move** `Nani.app` to your `/Applications` folder.
+4. **Open** Nani — it lives in your menu bar (look for the 👀 icon). 
+*(Note: As an open-source indie app, macOS might show a warning on first launch. See [Gatekeeper Instructions](#-installation--gatekeeper-instructions) below).*
+5. **Plug something in** — hear the magic! Each port type plays a different anime sound.
+6. **Click the menu bar icon** to quickly see port status, pause sounds, or open Settings.
 
-### Running Locally
+### Settings
+Open Settings from the menu bar popover (`Open Settings`) or press `⌘,`. From there you can:
+- **Ports** — see all monitored ports, preview sounds, assign different sounds per port, toggle ports on/off.
+- **Sound Library** — browse built-in sounds, import custom `.wav`/`.mp3` files (<500 KB).
+- **Preferences** — toggle launch at login, play on disconnect, dark mode, volume, Do Not Disturb schedule.
 
-```bash
-cd nani-web
-npm install
-npm run dev
-```
-
-Then open [http://localhost:3000](http://localhost:3000) in your browser to explore!
+### Onboarding
+On first launch, Nani walks you through sound assignments and enables launch at login automatically.
 
 ---
 
@@ -72,6 +64,11 @@ Nani is configured as a standard Swift Package Manager (SPM) project with a dedi
 To compile a Universal Binary, generate the application icon, embed framework dependencies, and package a direct-distribution `.app` and `.zip`:
 
 ```bash
+# Clone the repository
+git clone https://github.com/iamvibecoding/Nani.git
+cd Nani
+
+# Run the build script
 ./build_release.sh
 ```
 
@@ -117,6 +114,22 @@ Once opened once, Nani will launch seamlessly thereafter and can be configured i
 
 ---
 
+## 🌐 Web Interface (Sound Library Explorer)
+
+Nani includes a companion web application built with Next.js to easily preview and explore the built-in sound library.
+
+### Running Locally
+
+```bash
+cd nani-web
+npm install
+npm run dev
+```
+
+Then open [http://localhost:3000](http://localhost:3000) in your browser to explore!
+
+---
+
 ## 📂 Repository Structure
 
 ```text
@@ -130,5 +143,12 @@ Nani/
 ├── Package.resolved      # SPM dependency versions lockfile
 ├── app-icon.png          # High-resolution source icon image used during build
 ├── build_release.sh      # Complete build, assembly, signing & packaging script
+├── LICENSE               # MIT License
 └── README.md             # Project documentation
 ```
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
