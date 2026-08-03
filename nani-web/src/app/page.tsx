@@ -83,6 +83,9 @@ export default function Home() {
           <a href="#features"><span className="nav-jp">特徴</span>Features</a>
           <a href="#sounds"><span className="nav-jp">音</span>Library</a>
           <a href="https://github.com/iamvibecoding/Nani" target="_blank" rel="noopener noreferrer"><span className="nav-jp">源</span>GitHub</a>
+          <a href="https://github.com/iamvibecoding/Nani/stargazers" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent)', borderColor: 'var(--accent)' }}>
+            <span className="nav-jp" style={{ color: 'var(--ink)' }}>星</span>Star Us ⭐
+          </a>
         </nav>
         <div className="header-actions">
           <ThemeToggle />
@@ -101,12 +104,13 @@ export default function Home() {
             <p className="hero-lead">Nani is a hyper-native macOS app. Plug a cable. Hear anime. Unplug. Hear anime. Zero bloat, pure adrenaline.</p>
 
             <div className="hero-actions">
-              <a href="#download" className="btn-mega">
+              <a href="/Nani_1.0.0.zip" download className="btn-mega">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                Get Nani Free
+                Download App
               </a>
-              <a href="#sounds" className="btn-outline">
-                View Sounds
+              <a href="https://github.com/iamvibecoding/Nani/releases" target="_blank" rel="noopener noreferrer" className="btn-outline">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                GitHub Releases
               </a>
             </div>
           </div>
@@ -220,12 +224,12 @@ export default function Home() {
           <div className="giant-cta brutal-panel-static">
             <h2>DOWNLOAD FREE</h2>
             
-            <div className="hero-actions" style={{ justifyContent: 'center', marginBottom: '12px', gap: '16px', display: 'flex', flexWrap: 'wrap' }}>
+            <div className="hero-actions" style={{ justifyContent: 'center', marginBottom: '12px' }}>
               <a href="/Nani_1.0.0.zip" download className="btn-mega">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                Download .zip
+                Download App
               </a>
-              <a href="https://github.com/iamvibecoding/Nani/releases" target="_blank" rel="noopener noreferrer" className="btn-outline" style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '1.1rem', padding: '12px 24px' }}>
+              <a href="https://github.com/iamvibecoding/Nani/releases" target="_blank" rel="noopener noreferrer" className="btn-outline">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
                 GitHub Releases
               </a>

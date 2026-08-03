@@ -5,9 +5,12 @@
 
   <p>
     <a href="https://github.com/iamvibecoding/Nani/releases"><img src="https://img.shields.io/github/v/release/iamvibecoding/Nani?color=blue&label=Release" alt="Release"></a>
+    <a href="https://github.com/iamvibecoding/Nani/stargazers"><img src="https://img.shields.io/github/stars/iamvibecoding/Nani?style=social" alt="GitHub stars"></a>
     <a href="https://github.com/iamvibecoding/Nani/blob/main/LICENSE"><img src="https://img.shields.io/github/license/iamvibecoding/Nani?color=green" alt="License"></a>
     <img src="https://img.shields.io/badge/Platform-macOS%2013.0+-lightgrey" alt="Platform">
   </p>
+
+  <p><em>⭐ If you like Nani, please consider starring this repository to help others discover it!</em></p>
 </div>
 
 **Nani** brings fun, lively micro-interactions to macOS. Whenever you plug or unplug peripherals — whether it's your charger, display monitor, USB device, or headphones — Nani triggers recognizable anime sound effects and custom audio feedback. Designed with a clean, Notion-inspired aesthetic, Nani blends native macOS feel with warm neutrals, fluid animations, and subtle anime personality.

@@ -802,12 +802,14 @@ footer::after {
 }
 
 @media (max-width: 768px) {
-  header { padding: 16px 5vw; }
-  nav { display: none; }
-  .header-actions { margin-left: auto; }
+  header { padding: 16px 5vw; flex-wrap: wrap; gap: 16px; justify-content: flex-start; }
+  nav { display: flex; width: 100%; gap: 12px; margin: 0; justify-content: space-between; align-items: center; }
+  nav a { padding: 8px 12px; font-size: 13px; border-width: 1px; }
+  nav a .nav-jp { display: none; }
+  .header-actions { position: absolute; right: 5vw; top: 18px; margin: 0; }
   section { padding: 80px 5vw; }
-  .hero-actions { flex-direction: column; width: 100%; }
-  .btn-mega, .btn-outline { width: 100%; }
+  .hero-actions { flex-direction: column; width: 100%; gap: 16px; }
+  .btn-mega, .btn-outline { width: 100%; justify-content: center; }
   .jp-watermark { display: none; } 
   .giant-cta { padding: 64px 24px; }
 }
